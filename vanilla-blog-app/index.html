@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Blog App</h1>
+
+  <div class="container">
+    <form id="blogForm">
+      <h2>Add a New Blog</h2>
+      <div class="form-group">
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" placeholder="Enter title" required>
+      </div>
+      <div class="form-group">
+        <label for="contentInput">Content:</label>
+        <textarea id="contentInput" placeholder="Enter content" required></textarea>
+      </div>
+      <button type="submit">Add Blog</button>
+    </form>
+
+    <h2>Blog List</h2>
+    <ul id="blogList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
