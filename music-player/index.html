@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .music-player {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      margin: 0;
+      color: #888;
+      font-size: 16px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .play-icon {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .play-icon:hover {
+      color: #555;
+    }
+
+    .progress-bar {
+      background-color: #eee;
+      height: 4px;
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .progress-bar .progress {
+      background-color: #333;
+      height: 100%;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="music-player">
+    <h1>Music Player</h1>
+    <p>Now playing: Song Title</p>
+
+    <div class="controls">
+      <button><i class="play-icon">&#9199;</i></button>
+      <button><i class="play-icon">&#9658;</i></button>
+      <button><i class="play-icon">&#9208;</i></button>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+</body>
+</html>
